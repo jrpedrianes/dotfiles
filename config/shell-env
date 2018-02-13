@@ -20,6 +20,6 @@ source "$HOME/.shell/external"
 
 # === Local variables and overrides ===
 
-#if [[ -f "$HOME/.shell_env_local" ]]; then
-#  source "$HOME/.shell_env_local"
-#fi
+if [[ -f "$HOME/.shell-env-local" ]]; then
+  source "$HOME/.shell-env-local"
+fi

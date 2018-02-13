@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# `.aliases` is used to provide custom variables.
+# `aliases` is used to provide custom variables.
 #
-# This file is used as a part of `.shell_env`
+# This file is used as a part of `.shell-env`
 
 
 # === Aliases ===
