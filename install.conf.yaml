@@ -2,6 +2,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - ["hash brew || {{ ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"; brew update }}", Installing brew ]
 
 - link:
     # Terminal
