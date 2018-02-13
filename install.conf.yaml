@@ -2,7 +2,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - ["hash brew || {{ ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"; brew update }}", Installing brew ]
+  - ["hash brew || ( /usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"; brew update )", Installing brew ]
 
 - link:
     # Terminal
@@ -32,4 +32,5 @@
     no-upgrage: true
 
 - shell:
+  - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Installing Oh My Zsh ]
   - [~/.dotfiles/macos, Configuring MacOS]
