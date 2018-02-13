@@ -1,0 +1,4 @@
+# Sorted alphabetically (by author's name):
+zsh-users/zsh-syntax-highlighting
+
+# Theme, should be the last:

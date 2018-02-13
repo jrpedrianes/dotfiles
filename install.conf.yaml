@@ -1,0 +1,34 @@
+- clean: ['~']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    # Terminal
+    ~/.shell:
+      path: shell
+      create: true
+    ~/.shell-env: config/shell-env
+    ~/.zshrc: config/zshrc
+    ~/.antibody: config/antibody.txt
+
+    # Git:
+    ~/.gitconfig: config/gitconfig
+
+    # Tools:
+    ~/.httpie/config.json:
+      path: config/httpie
+      create: true
+  
+    # Spectacle   
+    "~/Library/Application Support/Spectacle":
+      path: applications/Spectacle
+      create: true
+
+- brewfile:
+    # This accepts the same options as `brew bundle` command:
+    file: Brewfile
+    no-upgrage: true
+
+- shell:
+  - [~/.dotfiles/macos, Configuring MacOS]
