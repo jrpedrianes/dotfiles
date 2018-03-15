@@ -4,6 +4,9 @@
 [core]
   autocrlf = input
 
+[alias]
+  tree = log --graph --all --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
 # Allow local customizations in the .gitconfig-local file
 [include]
   path = ~/.gitconfig-local
