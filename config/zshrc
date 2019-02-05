@@ -62,6 +62,8 @@ plugins=(
   git
   docker
   docker-compose
+  kubectl
+  minikube
   gradle
   nvm
 )

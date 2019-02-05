@@ -1,5 +1,4 @@
 # Sorted alphabetically (by author's name):
-lukechilds/zsh-nvm
 zsh-users/zsh-syntax-highlighting
 
 # Theme, should be the last:

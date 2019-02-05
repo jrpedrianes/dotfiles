@@ -27,12 +27,14 @@
       path: applications/Spectacle
       create: true
 
-- brewfile:
-    # This accepts the same options as `brew bundle` command:
-    file: Brewfile
-    no-upgrage: true
+#- brewfile:
+#    # This accepts the same options as `brew bundle` command:
+#    file: Brewfile
+#    no-upgrage: true
 
 - shell:
-  - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Installing Oh My Zsh ]
+  - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Installing Oh My Zsh]
   - [~/.dotfiles/macos, Configuring MacOS]
   - ["npm install -g git-run", Installing git-run]
+  - ["sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit", Configure hyperkit]
+  - ["sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit", Configure hyperkit]

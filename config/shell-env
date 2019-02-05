@@ -17,6 +17,7 @@ source "$HOME/.shell/aliases"
 source "$HOME/.shell/functions"
 source "$HOME/.shell/external"
 
+export PATH="$PATH:$HOME/.shell/bin"
 
 # === Local variables and overrides ===
 

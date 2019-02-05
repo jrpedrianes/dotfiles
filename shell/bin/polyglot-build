@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+function runCMD {
+  CMD=$@
+  echo Running \"${CMD}\" in \"${PWD}\"
+  sh -c "$CMD"
+}
+
+if [ -e "$PWD/package.json" ]; then
+  runCMD npm install
+fi
+
+if [ -e "$PWD/gradlew" ]; then
+  runCMD ./gradlew clean build
+elif [ -e "$PWD/build.gradle" ]; then
+  runCMD gradle clean build
+fi
+
+if [ -e "$PWD/mvnw" ]; then
+  runCMD ./mvnw clean package
+elif [ -e "$PWD/pom.xml" ]; then
+  runCMD mvn clean package
+fi

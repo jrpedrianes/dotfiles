@@ -6,6 +6,7 @@
 
 [alias]
   tree = log --graph --all --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  prune-branches = !git branch -vv | grep ': gone]' | awk '{print $1}' | grep -v 'master' | xargs git branch -d
 
 # Allow local customizations in the .gitconfig-local file
 [include]
