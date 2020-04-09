@@ -6,13 +6,15 @@
 
 # === General ===
 
+export LANG=en_US
+
 # Homebrew:
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
 # Pagers:
-export LESS="-R"  # argument to allow less to show colors
-export PAGER='bat'
-export MANPAGER='bat'
+#export LESS="-RF"  # argument to allow less to show colors
+#export PAGER='bat'
+#export MANPAGER='bat'
 
 # === Version managers ===
 
@@ -23,3 +25,8 @@ source "/usr/local/opt/nvm/nvm.sh"
 # SDKMAN:
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# JABBA:
+export JABBA_DIR="$HOME/.jabba"
+[[ -s "$HOME/.jabba/jabba.sh" ]] && source "$HOME/.jabba/jabba.sh"
+

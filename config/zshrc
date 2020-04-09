@@ -66,6 +66,7 @@ plugins=(
   minikube
   gradle
   nvm
+  rust
 )
 
 
