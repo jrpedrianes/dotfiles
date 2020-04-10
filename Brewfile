@@ -20,11 +20,11 @@ brew "readline"
 brew "sqlite"
 brew "xz"
 brew "httpie"
-brew "jabba"
 brew "jq"
 brew "kubernetes-cli"
 brew "libunistring"
 brew "libidn2"
+brew "mas"
 brew "nvm"
 brew "pcre"
 brew "postgresql"
@@ -45,17 +45,24 @@ cask "google-chrome"
 cask "grammarly"
 cask "handbrake"
 cask "iterm2"
-cask "java8"
-cask "java9"
 cask "jd-gui"
 cask "jetbrains-toolbox"
 cask "pgadmin4"
 cask "postman"
 cask "skype"
 cask "slack"
-cask "spectacle"
 cask "sublime-text"
 cask "suspicious-package"
+cask "teamviewer"
 cask "visual-studio-code"
 cask "vlc"
 cask "wakeonlan"
+cask "zoomus"
+mas "Cleaner-App", id: 1013897218
+mas "Keynote", id: 409183694
+mas "Magnet", id: 441258766
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "The Unarchiver", id: 425424353
+mas "WakeOnCommand", id: 1484204619
+mas "Xcode", id: 497799835

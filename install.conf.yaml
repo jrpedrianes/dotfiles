@@ -3,7 +3,7 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - ["hash brew || ( /usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"; brew update )", Installing brew ]
-  - ["curl -s 'https://get.sdkman.io' | bash", Installing SDKMAN]
+  - ["curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | bash", Installing jabba]
 
 - link:
     # Terminal
@@ -22,11 +22,6 @@
       path: config/httpie
       create: true
 
-    # Spectacle
-    "~/Library/Application Support/Spectacle":
-      path: applications/Spectacle
-      create: true
-
 - brewfile:
     # This accepts the same options as `brew bundle` command:
     file: Brewfile
@@ -36,5 +31,6 @@
   - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Installing Oh My Zsh]
   - [~/.dotfiles/macos, Configuring MacOS]
   - ["npm install -g git-run", Installing git-run]
-  - ["sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit", Configure hyperkit]
-  - ["sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit", Configure hyperkit]
+
+- shell:
+    - [brew cleanup, Cleaning up]
