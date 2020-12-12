@@ -62,11 +62,13 @@ plugins=(
   git
   docker
   docker-compose
-  kubectl
-  minikube
   gradle
   nvm
+  npm
+  httpie
+  cargo
   rust
+  sdk
 )
 
 
@@ -78,7 +80,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.shell-env
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -101,3 +103,5 @@ source ~/.shell-env
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+autoload -U +X bashcompinit && bashcompinit
