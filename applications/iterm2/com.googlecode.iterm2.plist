@@ -795,13 +795,15 @@
 	<real>0.16163611778846154</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
+	<key>SwapFindNextPrevious</key>
+	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Actions</string>
-		<string>Captured Output</string>
 		<string>Snippets</string>
+		<string>Captured Output</string>
 	</array>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
