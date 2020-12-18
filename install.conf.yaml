@@ -25,12 +25,11 @@
 - brewfile:
     # This accepts the same options as `brew bundle` command:
     file: Brewfile
-    no-upgrage: true
+    no-upgrade: true
 
 - shell:
-  - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Installing Oh My Zsh]
+  - ["sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"", Installing Oh My Zsh]
   - [~/.dotfiles/macos, Configuring MacOS]
-  - ["npm install -g git-run", Installing git-run]
 
 - shell:
     - [brew cleanup, Cleaning up]
