@@ -34,9 +34,11 @@ brew "tig"
 brew "vim"
 brew "wget"
 brew "zsh"
+cask "adobe-acrobat-reader"
 cask "appcleaner"
 cask "cleanmymac"
 cask "cyberduck"
+cask "discord"
 cask "docker"
 cask "firefox"
 cask "google-chrome"
@@ -56,6 +58,7 @@ cask "transmission"
 cask "visual-studio-code"
 cask "vlc"
 cask "wakeonlan"
+mas "Disk Space Analyzer Free", id: 446243721
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
