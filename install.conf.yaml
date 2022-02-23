@@ -12,6 +12,7 @@
       create: true
     ~/.shell-env: config/shell-env
     ~/.zshrc: config/zshrc
+    ~/.zprofile: config/zprofile
     ~/.p10k.zsh: config/p10k.zsh
     ~/.antibody: config/antibody.txt
 
