@@ -36,6 +36,7 @@
   - ["sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"", Installing Oh My Zsh]
   - ["sh -c \"$(git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k)\"", Installing Powerlevel10k Theme]
   - ["sh -c \"$(git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting)\"", Installing fast-syntax-highlighting]
+  - ["sh -c \"$(wget https://github.com/jrpedrianes/kubecolor/releases/download/v0.0.21/kubecolor_0.0.21_Darwin_x86_64.tar.gz -O - | tar -xz; mv kubecolor $HOME/.dotfiles/shell/bin-local)\"", Installing kubecolor]
   - [~/.dotfiles/macos, Configuring MacOS]
 
 - shell:

@@ -7,3 +7,4 @@
 
 # === Aliases ===
 alias vi="vim"
+alias kubectl="kubecolor"

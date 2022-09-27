@@ -18,6 +18,7 @@ source "$HOME/.shell/functions"
 source "$HOME/.shell/external"
 
 export PATH="$PATH:$HOME/.shell/bin"
+export PATH="$PATH:$HOME/.shell/bin-local"
 
 # === Local variables and overrides ===
 
