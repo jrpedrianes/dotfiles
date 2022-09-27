@@ -1,12 +1,11 @@
 tap "1password/tap"
-tap "getantibody/tap"
+tap "danielfoehrkn/switch"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "stripe/stripe-cli"
-brew "antibody"
 brew "gdbm"
 brew "readline"
 brew "xz"
@@ -31,6 +30,7 @@ brew "git"
 brew "htop"
 brew "httpie"
 brew "kind"
+brew "kubernetes-cli", link: false
 brew "mas"
 brew "nvm"
 brew "postgresql@14"
@@ -43,6 +43,7 @@ brew "vegeta"
 brew "vim"
 brew "wget"
 brew "zsh"
+brew "danielfoehrkn/switch/switch"
 brew "stripe/stripe-cli/stripe"
 cask "1password"
 cask "1password-cli"
@@ -79,7 +80,9 @@ mas "Disk Space Analyzer Free", id: 446243721
 mas "Duplicate File Finder", id: 1032755628
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "WakeOnCommand", id: 1484204619
+mas "WireGuard", id: 1451685025

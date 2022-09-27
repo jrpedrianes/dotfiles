@@ -11,11 +11,9 @@
 [pull]
   ff = only
 
+[pager]
+  branch = false
+
 # Allow local customizations in the .gitconfig-local file
 [include]
   path = ~/.gitconfig-local
-
-[pager]
-  branch = false
-[user]
-	email = jrodped@kuflow.com
