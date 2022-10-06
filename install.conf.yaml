@@ -32,6 +32,10 @@
     file: Brewfile
     no-upgrade: true
 
+- link:
+    # xbar
+    ~/Library/Application\ Support/xbar/plugins: applications/xbar/plugins/wireguard.sh
+
 - shell:
   - ["sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"", Installing Oh My Zsh]
   - ["sh -c \"$(git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k)\"", Installing Powerlevel10k Theme]
