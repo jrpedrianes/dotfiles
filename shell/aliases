@@ -7,4 +7,20 @@
 
 # === Aliases ===
 alias vi="vim"
+
 alias kubectl="kubecolor"
+# make completion work with kubecolor
+compdef kubecolor=kubectl
+
+# Digital Ocean
+function _doctl_command () {
+  # _doctl completion function call to doctl bin to get the completion suggestion using the command "__complete"
+  if [[ "$1" == "__complete" ]]; then
+    "$(brew --prefix doctl)/bin/doctl" $@ ""
+  else
+    op run --env-file="${HOME}/.config/op/doctl.env" -- "$(brew --prefix doctl)/bin/doctl" $@
+  fi
+}
+
+alias doctl="_doctl_command"
+compdef _doctl _doctl_command

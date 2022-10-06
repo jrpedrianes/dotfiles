@@ -20,6 +20,13 @@ source "$HOME/.shell/external"
 export PATH="$PATH:$HOME/.shell/bin"
 export PATH="$PATH:$HOME/.shell/bin-local"
 
+SOURCED_FILES=$(find "$HOME/.shell/source.d" -type f -path "*\.sh" -exec basename -a {} \;)
+for SOURCED_FILE in ${SOURCED_FILES}; do
+  # shellcheck source=$HOME/.shell/source.d/kubeswitch_cleanup_handler_zsh.sh
+  source "$HOME/.shell/source.d/$SOURCED_FILE"
+done
+unset SOURCED_FILES SOURCED_FILE
+
 # === Local variables and overrides ===
 
 if [[ -f "$HOME/.shell-env-local" ]]; then
