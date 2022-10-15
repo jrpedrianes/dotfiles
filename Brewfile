@@ -33,7 +33,7 @@ brew "htop"
 brew "httpie"
 brew "jq"
 brew "kind"
-brew "kubernetes-cli", link: false
+brew "kubernetes-cli"
 brew "mas"
 brew "nvm"
 brew "postgresql@14"
@@ -46,6 +46,7 @@ brew "vegeta"
 brew "vim"
 brew "wget"
 brew "wireguard-tools"
+brew "yq"
 brew "zsh"
 brew "danielfoehrkn/switch/switch"
 brew "stripe/stripe-cli/stripe"
@@ -90,4 +91,3 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "WakeOnCommand", id: 1484204619
-mas "WireGuard", id: 1451685025

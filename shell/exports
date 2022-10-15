@@ -5,8 +5,11 @@
 # This file is used as a part of `.shell-env`
 
 # === General ===
+LOCAL_IP=$(ifconfig en0 | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}')
 
 export LANG=en_US
+export LOCAL_IP
+
 
 # Homebrew:
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
