@@ -29,5 +29,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # switch: https://github.com/danielfoehrKn/kubeswitch
-source $(brew --prefix switch)/switch.sh
+source "$(brew --prefix switch)/switch.sh"
 
