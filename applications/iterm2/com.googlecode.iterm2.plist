@@ -4,6 +4,8 @@
 <dict>
 	<key>AllowClipboardAccess</key>
 	<true/>
+	<key>ClickToSelectCommand</key>
+	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>FFC5D853-6462-4EB8-9C9F-5048F26EEC8E</string>
 	<key>GlobalKeyMap</key>
@@ -599,6 +601,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -789,6 +793,8 @@
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
+	<key>ShowNewOutputIndicator</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
