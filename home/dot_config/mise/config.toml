@@ -1,0 +1,8 @@
+[settings]
+pin = true
+
+[env]
+MC_DISABLE_PAGER = "true"
+
+[tools]
+cosign = "3.0.1"

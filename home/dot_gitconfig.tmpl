@@ -1,0 +1,28 @@
+[user]
+  name = {{ .name }}
+  email = {{ .email }}
+
+[init]
+  defaultBranch = main
+
+[push]
+  default = simple
+  autoSetupRemote = true
+
+[core]
+  autocrlf = input
+  editor = vim
+
+[alias]
+  tree = log --graph --all --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  prune-branches = !git branch -vv | grep ': gone]' | awk '{print $1}' | grep -v 'master' | xargs git branch -d
+
+[pull]
+  ff = only
+
+[pager]
+  branch = false
+
+# Allow local customizations in the .gitconfig-local file
+[include]
+  path = ~/.gitconfig-local
