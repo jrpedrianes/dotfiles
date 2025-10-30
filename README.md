@@ -1,11 +1,8 @@
-jrpedrianes's dotfiles
-======================
+Jorge Rodríguez Pedrianes' dotfiles
+===================================
 
-Based on
---------
- - https://github.com/sobolevn/dotfiles
- - https://dev.to/sobolevn/instant-100-command-line-productivity-boost
+Personal dotfiles to configure MacOS laptop.
 
-License
--------
-[WTFPL](https://en.wikipedia.org/wiki/WTFPL): do the fuck you want. Enjoy!
+This project is based on the great project of [@felipecrs](https://github.com/felipecrs), kudos for that great job 👏.
+
+https://github.com/felipecrs/dotfiles/tree/master
