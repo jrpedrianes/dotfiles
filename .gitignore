@@ -1,5 +1,6 @@
 # Ignore all dot files except
 .*
+!.chezmoi*
 !.editorconfig
 !.gitignore
-!.gitmodules
+!etc/.gitmodules
