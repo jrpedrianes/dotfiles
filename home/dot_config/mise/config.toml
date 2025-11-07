@@ -6,4 +6,4 @@ MC_DISABLE_PAGER = "true"
 
 [tools]
 cosign  = "3.0.2"
-chezmoi = "2.66.1"
+chezmoi = "2.67.0"
