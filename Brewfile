@@ -1,6 +1,7 @@
 brew "btop"
 brew "fzf"
 brew "git"
+brew "httpie"
 brew "mise"
 brew "starship"
 brew "vim"

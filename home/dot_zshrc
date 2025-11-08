@@ -71,7 +71,12 @@ ZSH_THEME=""
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  mise
+  mise # Must be loaded first
+  1password
+  chezmoi
+  command-not-found
+  common-aliases
+  httpie
   fzf
   git
   starship
