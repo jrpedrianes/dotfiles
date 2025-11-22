@@ -2,6 +2,7 @@ brew "btop"
 brew "fzf"
 brew "git"
 brew "httpie"
+brew "mas"
 brew "mise"
 brew "starship"
 brew "vim"
@@ -15,3 +16,7 @@ cask "firefox"
 cask "ghostty"
 cask "google-chrome"
 cask "jetbrains-toolbox"
+
+# App Store apps
+mas "Bitwarden", id: 1352778147
+mas "Magnet", id: 441258766
