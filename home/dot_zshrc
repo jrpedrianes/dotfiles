@@ -79,6 +79,7 @@ plugins=(
   httpie
   fzf
   git
+  pnpm
   starship
   zsh-autosuggestions
   zsh-syntax-highlighting
